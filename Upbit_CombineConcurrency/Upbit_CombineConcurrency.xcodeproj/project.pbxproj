@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC5A7B3C2BEC58AB00A13991 /* Upbit_CombineConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B3B2BEC58AB00A13991 /* Upbit_CombineConcurrencyApp.swift */; };
+		AC5A7B3E2BEC58AB00A13991 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B3D2BEC58AB00A13991 /* ContentView.swift */; };
+		AC5A7B402BEC58AC00A13991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5A7B3F2BEC58AC00A13991 /* Assets.xcassets */; };
+		AC5A7B432BEC58AC00A13991 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5A7B422BEC58AC00A13991 /* Preview Assets.xcassets */; };
+		AC5A7B4D2BEC58AC00A13991 /* Upbit_CombineConcurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B4C2BEC58AC00A13991 /* Upbit_CombineConcurrencyTests.swift */; };
+		AC5A7B572BEC58AC00A13991 /* Upbit_CombineConcurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B562BEC58AC00A13991 /* Upbit_CombineConcurrencyUITests.swift */; };
+		AC5A7B592BEC58AC00A13991 /* Upbit_CombineConcurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B582BEC58AC00A13991 /* Upbit_CombineConcurrencyUITestsLaunchTests.swift */; };
+		AC5A7B672BEC5A9B00A13991 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B662BEC5A9B00A13991 /* RowView.swift */; };
+		AC5A7B692BEC5ABB00A13991 /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B682BEC5ABB00A13991 /* CoinView.swift */; };
+		AC5A7B6B2BEC5F7900A13991 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B6A2BEC5F7900A13991 /* Market.swift */; };
+		AC5A7B6E2BEC6BA100A13991 /* CoinUpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B6D2BEC6BA100A13991 /* CoinUpgradeView.swift */; };
+		AC5A7B702BEC6BBB00A13991 /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B6F2BEC6BBB00A13991 /* CoinViewModel.swift */; };
+		AC5A7B742BEC707B00A13991 /* CoinCombineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B732BEC707B00A13991 /* CoinCombineViewModel.swift */; };
+		AC5A7B772BEC8A9A00A13991 /* CoinCombineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B762BEC8A9A00A13991 /* CoinCombineView.swift */; };
+		AC5A7B792BEC907400A13991 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B782BEC907400A13991 /* ViewModelType.swift */; };
+		AC5A7B7B2BEC912000A13991 /* CoinCombineViewModel_v2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B7A2BEC912000A13991 /* CoinCombineViewModel_v2.swift */; };
+		AC5A7B7D2BEC92D400A13991 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B7C2BEC92D400A13991 /* Network.swift */; };
+		AC5A7B802BEC9BCB00A13991 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B7F2BEC9BCB00A13991 /* WebSocketManager.swift */; };
+		AC5A7B822BECA2B800A13991 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B812BECA2B800A13991 /* ChartView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC5A7B492BEC58AC00A13991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC5A7B302BEC58AB00A13991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC5A7B372BEC58AB00A13991;
+			remoteInfo = Upbit_CombineConcurrency;
+		};
+		AC5A7B532BEC58AC00A13991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC5A7B302BEC58AB00A13991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC5A7B372BEC58AB00A13991;
+			remoteInfo = Upbit_CombineConcurrency;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC5A7B382BEC58AB00A13991 /* Upbit_CombineConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Upbit_CombineConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5A7B3B2BEC58AB00A13991 /* Upbit_CombineConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upbit_CombineConcurrencyApp.swift; sourceTree = "<group>"; };
+		AC5A7B3D2BEC58AB00A13991 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC5A7B3F2BEC58AC00A13991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC5A7B422BEC58AC00A13991 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC5A7B482BEC58AC00A13991 /* Upbit_CombineConcurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Upbit_CombineConcurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5A7B4C2BEC58AC00A13991 /* Upbit_CombineConcurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upbit_CombineConcurrencyTests.swift; sourceTree = "<group>"; };
+		AC5A7B522BEC58AC00A13991 /* Upbit_CombineConcurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Upbit_CombineConcurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5A7B562BEC58AC00A13991 /* Upbit_CombineConcurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upbit_CombineConcurrencyUITests.swift; sourceTree = "<group>"; };
+		AC5A7B582BEC58AC00A13991 /* Upbit_CombineConcurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upbit_CombineConcurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC5A7B662BEC5A9B00A13991 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		AC5A7B682BEC5ABB00A13991 /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
+		AC5A7B6A2BEC5F7900A13991 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		AC5A7B6D2BEC6BA100A13991 /* CoinUpgradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinUpgradeView.swift; sourceTree = "<group>"; };
+		AC5A7B6F2BEC6BBB00A13991 /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
+		AC5A7B732BEC707B00A13991 /* CoinCombineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCombineViewModel.swift; sourceTree = "<group>"; };
+		AC5A7B762BEC8A9A00A13991 /* CoinCombineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCombineView.swift; sourceTree = "<group>"; };
+		AC5A7B782BEC907400A13991 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		AC5A7B7A2BEC912000A13991 /* CoinCombineViewModel_v2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCombineViewModel_v2.swift; sourceTree = "<group>"; };
+		AC5A7B7C2BEC92D400A13991 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		AC5A7B7F2BEC9BCB00A13991 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		AC5A7B812BECA2B800A13991 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC5A7B352BEC58AB00A13991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5A7B452BEC58AC00A13991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5A7B4F2BEC58AC00A13991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC5A7B2F2BEC58AB00A13991 = {
+			isa = PBXGroup;
+			children = (
+				AC5A7B3A2BEC58AB00A13991 /* Upbit_CombineConcurrency */,
+				AC5A7B4B2BEC58AC00A13991 /* Upbit_CombineConcurrencyTests */,
+				AC5A7B552BEC58AC00A13991 /* Upbit_CombineConcurrencyUITests */,
+				AC5A7B392BEC58AB00A13991 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC5A7B392BEC58AB00A13991 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A7B382BEC58AB00A13991 /* Upbit_CombineConcurrency.app */,
+				AC5A7B482BEC58AC00A13991 /* Upbit_CombineConcurrencyTests.xctest */,
+				AC5A7B522BEC58AC00A13991 /* Upbit_CombineConcurrencyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC5A7B3A2BEC58AB00A13991 /* Upbit_CombineConcurrency */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A7B7E2BEC9BAD00A13991 /* Socket */,
+				AC5A7B752BEC708700A13991 /* CoinCombine */,
+				AC5A7B6C2BEC6B5900A13991 /* CoinViewModel */,
+				AC5A7B652BEC5A6E00A13991 /* Coin */,
+				AC5A7B3B2BEC58AB00A13991 /* Upbit_CombineConcurrencyApp.swift */,
+				AC5A7B3D2BEC58AB00A13991 /* ContentView.swift */,
+				AC5A7B3F2BEC58AC00A13991 /* Assets.xcassets */,
+				AC5A7B412BEC58AC00A13991 /* Preview Content */,
+			);
+			path = Upbit_CombineConcurrency;
+			sourceTree = "<group>";
+		};
+		AC5A7B412BEC58AC00A13991 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A7B422BEC58AC00A13991 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC5A7B4B2BEC58AC00A13991 /* Upbit_CombineConcurrencyTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A7B4C2BEC58AC00A13991 /* Upbit_CombineConcurrencyTests.swift */,
+			);
+			path = Upbit_CombineConcurrencyTests;
+			sourceTree = "<group>";
+		};
+		AC5A7B552BEC58AC00A13991 /* Upbit_CombineConcurrencyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A7B562BEC58AC00A13991 /* Upbit_CombineConcurrencyUITests.swift */,
+				AC5A7B582BEC58AC00A13991 /* Upbit_CombineConcurrencyUITestsLaunchTests.swift */,
+			);
+			path = Upbit_CombineConcurrencyUITests;
+			sourceTree = "<group>";
+		};
+		AC5A7B652BEC5A6E00A13991 /* Coin */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A7B662BEC5A9B00A13991 /* RowView.swift */,
+				AC5A7B682BEC5ABB00A13991 /* CoinView.swift */,
+				AC5A7B6A2BEC5F7900A13991 /* Market.swift */,
+			);
+			path = Coin;
+			sourceTree = "<group>";
+		};
+		AC5A7B6C2BEC6B5900A13991 /* CoinViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A7B6D2BEC6BA100A13991 /* CoinUpgradeView.swift */,
+				AC5A7B6F2BEC6BBB00A13991 /* CoinViewModel.swift */,
+			);
+			path = CoinViewModel;
+			sourceTree = "<group>";
+		};
+		AC5A7B752BEC708700A13991 /* CoinCombine */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A7B7C2BEC92D400A13991 /* Network.swift */,
+				AC5A7B782BEC907400A13991 /* ViewModelType.swift */,
+				AC5A7B7A2BEC912000A13991 /* CoinCombineViewModel_v2.swift */,
+				AC5A7B732BEC707B00A13991 /* CoinCombineViewModel.swift */,
+				AC5A7B762BEC8A9A00A13991 /* CoinCombineView.swift */,
+			);
+			path = CoinCombine;
+			sourceTree = "<group>";
+		};
+		AC5A7B7E2BEC9BAD00A13991 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A7B7F2BEC9BCB00A13991 /* WebSocketManager.swift */,
+				AC5A7B812BECA2B800A13991 /* ChartView.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC5A7B372BEC58AB00A13991 /* Upbit_CombineConcurrency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5A7B5C2BEC58AC00A13991 /* Build configuration list for PBXNativeTarget "Upbit_CombineConcurrency" */;
+			buildPhases = (
+				AC5A7B342BEC58AB00A13991 /* Sources */,
+				AC5A7B352BEC58AB00A13991 /* Frameworks */,
+				AC5A7B362BEC58AB00A13991 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Upbit_CombineConcurrency;
+			productName = Upbit_CombineConcurrency;
+			productReference = AC5A7B382BEC58AB00A13991 /* Upbit_CombineConcurrency.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC5A7B472BEC58AC00A13991 /* Upbit_CombineConcurrencyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5A7B5F2BEC58AC00A13991 /* Build configuration list for PBXNativeTarget "Upbit_CombineConcurrencyTests" */;
+			buildPhases = (
+				AC5A7B442BEC58AC00A13991 /* Sources */,
+				AC5A7B452BEC58AC00A13991 /* Frameworks */,
+				AC5A7B462BEC58AC00A13991 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC5A7B4A2BEC58AC00A13991 /* PBXTargetDependency */,
+			);
+			name = Upbit_CombineConcurrencyTests;
+			productName = Upbit_CombineConcurrencyTests;
+			productReference = AC5A7B482BEC58AC00A13991 /* Upbit_CombineConcurrencyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC5A7B512BEC58AC00A13991 /* Upbit_CombineConcurrencyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5A7B622BEC58AC00A13991 /* Build configuration list for PBXNativeTarget "Upbit_CombineConcurrencyUITests" */;
+			buildPhases = (
+				AC5A7B4E2BEC58AC00A13991 /* Sources */,
+				AC5A7B4F2BEC58AC00A13991 /* Frameworks */,
+				AC5A7B502BEC58AC00A13991 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC5A7B542BEC58AC00A13991 /* PBXTargetDependency */,
+			);
+			name = Upbit_CombineConcurrencyUITests;
+			productName = Upbit_CombineConcurrencyUITests;
+			productReference = AC5A7B522BEC58AC00A13991 /* Upbit_CombineConcurrencyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC5A7B302BEC58AB00A13991 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					AC5A7B372BEC58AB00A13991 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					AC5A7B472BEC58AC00A13991 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = AC5A7B372BEC58AB00A13991;
+					};
+					AC5A7B512BEC58AC00A13991 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = AC5A7B372BEC58AB00A13991;
+					};
+				};
+			};
+			buildConfigurationList = AC5A7B332BEC58AB00A13991 /* Build configuration list for PBXProject "Upbit_CombineConcurrency" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC5A7B2F2BEC58AB00A13991;
+			productRefGroup = AC5A7B392BEC58AB00A13991 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC5A7B372BEC58AB00A13991 /* Upbit_CombineConcurrency */,
+				AC5A7B472BEC58AC00A13991 /* Upbit_CombineConcurrencyTests */,
+				AC5A7B512BEC58AC00A13991 /* Upbit_CombineConcurrencyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC5A7B362BEC58AB00A13991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5A7B432BEC58AC00A13991 /* Preview Assets.xcassets in Resources */,
+				AC5A7B402BEC58AC00A13991 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5A7B462BEC58AC00A13991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5A7B502BEC58AC00A13991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC5A7B342BEC58AB00A13991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5A7B6E2BEC6BA100A13991 /* CoinUpgradeView.swift in Sources */,
+				AC5A7B772BEC8A9A00A13991 /* CoinCombineView.swift in Sources */,
+				AC5A7B7D2BEC92D400A13991 /* Network.swift in Sources */,
+				AC5A7B822BECA2B800A13991 /* ChartView.swift in Sources */,
+				AC5A7B3E2BEC58AB00A13991 /* ContentView.swift in Sources */,
+				AC5A7B702BEC6BBB00A13991 /* CoinViewModel.swift in Sources */,
+				AC5A7B692BEC5ABB00A13991 /* CoinView.swift in Sources */,
+				AC5A7B672BEC5A9B00A13991 /* RowView.swift in Sources */,
+				AC5A7B3C2BEC58AB00A13991 /* Upbit_CombineConcurrencyApp.swift in Sources */,
+				AC5A7B7B2BEC912000A13991 /* CoinCombineViewModel_v2.swift in Sources */,
+				AC5A7B802BEC9BCB00A13991 /* WebSocketManager.swift in Sources */,
+				AC5A7B6B2BEC5F7900A13991 /* Market.swift in Sources */,
+				AC5A7B792BEC907400A13991 /* ViewModelType.swift in Sources */,
+				AC5A7B742BEC707B00A13991 /* CoinCombineViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5A7B442BEC58AC00A13991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5A7B4D2BEC58AC00A13991 /* Upbit_CombineConcurrencyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5A7B4E2BEC58AC00A13991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5A7B572BEC58AC00A13991 /* Upbit_CombineConcurrencyUITests.swift in Sources */,
+				AC5A7B592BEC58AC00A13991 /* Upbit_CombineConcurrencyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC5A7B4A2BEC58AC00A13991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC5A7B372BEC58AB00A13991 /* Upbit_CombineConcurrency */;
+			targetProxy = AC5A7B492BEC58AC00A13991 /* PBXContainerItemProxy */;
+		};
+		AC5A7B542BEC58AC00A13991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC5A7B372BEC58AB00A13991 /* Upbit_CombineConcurrency */;
+			targetProxy = AC5A7B532BEC58AC00A13991 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AC5A7B5A2BEC58AC00A13991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC5A7B5B2BEC58AC00A13991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC5A7B5D2BEC58AC00A13991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Upbit_CombineConcurrency/Preview Content\"";
+				DEVELOPMENT_TEAM = 92Y6UC7Q5M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donotinto.Upbit-CombineConcurrency";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC5A7B5E2BEC58AC00A13991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Upbit_CombineConcurrency/Preview Content\"";
+				DEVELOPMENT_TEAM = 92Y6UC7Q5M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donotinto.Upbit-CombineConcurrency";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC5A7B602BEC58AC00A13991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92Y6UC7Q5M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donotinto.Upbit-CombineConcurrencyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Upbit_CombineConcurrency.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Upbit_CombineConcurrency";
+			};
+			name = Debug;
+		};
+		AC5A7B612BEC58AC00A13991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92Y6UC7Q5M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donotinto.Upbit-CombineConcurrencyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Upbit_CombineConcurrency.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Upbit_CombineConcurrency";
+			};
+			name = Release;
+		};
+		AC5A7B632BEC58AC00A13991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92Y6UC7Q5M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donotinto.Upbit-CombineConcurrencyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Upbit_CombineConcurrency;
+			};
+			name = Debug;
+		};
+		AC5A7B642BEC58AC00A13991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92Y6UC7Q5M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donotinto.Upbit-CombineConcurrencyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Upbit_CombineConcurrency;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC5A7B332BEC58AB00A13991 /* Build configuration list for PBXProject "Upbit_CombineConcurrency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5A7B5A2BEC58AC00A13991 /* Debug */,
+				AC5A7B5B2BEC58AC00A13991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC5A7B5C2BEC58AC00A13991 /* Build configuration list for PBXNativeTarget "Upbit_CombineConcurrency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5A7B5D2BEC58AC00A13991 /* Debug */,
+				AC5A7B5E2BEC58AC00A13991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC5A7B5F2BEC58AC00A13991 /* Build configuration list for PBXNativeTarget "Upbit_CombineConcurrencyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5A7B602BEC58AC00A13991 /* Debug */,
+				AC5A7B612BEC58AC00A13991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC5A7B622BEC58AC00A13991 /* Build configuration list for PBXNativeTarget "Upbit_CombineConcurrencyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5A7B632BEC58AC00A13991 /* Debug */,
+				AC5A7B642BEC58AC00A13991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC5A7B302BEC58AB00A13991 /* Project object */;
+}
