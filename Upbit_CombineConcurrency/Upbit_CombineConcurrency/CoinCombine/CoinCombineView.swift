@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CoinCombineView: View {
     
-    // @StateObject
-    var viewModel: ViewModelType
+    @StateObject
+    var viewModel = CoinCombineViewModel_v2()
     
     private var columns: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
     
@@ -25,8 +25,8 @@ struct CoinCombineView: View {
                 }
             } // ScrollView
             .task {
-                print("view On Appear")
-                viewModel.input.viewOnAppear.send(())
+                // viewModel.input.viewOnAppear.send(())
+                viewModel.action(.viewOnAppear)
             }
         } // NavigationStack
     }

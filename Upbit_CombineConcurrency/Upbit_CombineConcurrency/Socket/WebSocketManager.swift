@@ -15,6 +15,10 @@ class WebSocketManager: NSObject {
     private var webSocket: URLSessionWebSocketTask?
     private var isOpen = false
     
+    private var timer: Timer?
+    
+    var orderbookSbj = PassthroughSubject<OrderBook, Never>()
+    
     func openWebSocket() {
         print(#function)
         
@@ -25,6 +29,8 @@ class WebSocketManager: NSObject {
                                     delegateQueue: nil)
             
             webSocket = session.webSocketTask(with: url)
+            
+            // 소켓 연결요청
             webSocket?.resume()
         }
     }
@@ -34,6 +40,9 @@ class WebSocketManager: NSObject {
         
         webSocket?.cancel(with: .goingAway, reason: nil)
         webSocket = nil
+        
+        timer?.invalidate()
+        timer = nil
         
         isOpen = false
     }
@@ -71,9 +80,30 @@ extension WebSocketManager {
             
             webSocket?.receive { result in
                 
+                // MARK: Result Switch
                 switch result {
                 case .success(let success):
                     print("Receive", success)
+                
+                    // MARK: Success Switch
+                    switch success {
+                    case .data(let data):
+                        
+                        if let decodedData = try? JSONDecoder().decode(OrderBook.self, from: data) {
+                            
+                            self.orderbookSbj.send(decodedData)
+                        } else {
+                            print("디코딩 실패")
+                        }
+                    
+                    case .string(let string):
+                        print(string)
+                        
+                    // MARK: success가 Frozen이 아니기 때문에 필요함
+                    @unknown default:
+                        fatalError()
+                    }
+                    
                 case .failure(let failure):
                     print("Receive", failure)
                 }
@@ -81,5 +111,19 @@ extension WebSocketManager {
             }
             
         }
+    }
+    
+    // 서버에 의해 연결이 끊어지지 않도록 주기적으로 ping을 서버에 보내주는 작업도 추가
+    func ping() {
+        self.timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true, block: { [weak self] _ in
+            
+            self?.webSocket?.sendPing { error in
+                if let error {
+                    print("ping pong error", error.localizedDescription)
+                } else {
+                    print("ping ping ping")
+                }
+            }
+        })
     }
 }

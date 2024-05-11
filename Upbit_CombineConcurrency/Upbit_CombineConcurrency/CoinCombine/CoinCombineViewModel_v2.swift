@@ -26,6 +26,7 @@ class CoinCombineViewModel_v2: ViewModelType {
     var cancellables = Set<AnyCancellable>()
     
     var input = Input()
+    
     @Published
     var output = Output()
     
@@ -45,6 +46,18 @@ extension CoinCombineViewModel_v2 {
         var market: [Market] = []
     }
     
+    enum Action {
+        case viewOnAppear
+    }
+    
+    func action(_ action: Action) {
+        
+        switch action {
+        case .viewOnAppear:
+            input.viewOnAppear.send(())
+        }
+    }
+    
     //transform
     func transform() {
         
@@ -54,13 +67,13 @@ extension CoinCombineViewModel_v2 {
                 // 통신 후 마켓 정보를 Output로 전달
                 guard let self else { return }
                 
-                Task { try? await self.fetchMarket() }
+                Task { await self.fetchMarket() }
             }
             .store(in: &cancellables)
     }
     
     @MainActor
-    func fetchMarket() async throws {
+    func fetchMarket() async {
         do {
             output.market = try await Network.shared.requestUpbitAPI()
         } catch {

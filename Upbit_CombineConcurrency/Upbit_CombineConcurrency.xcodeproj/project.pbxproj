@@ -26,6 +26,8 @@
 		AC5A7B7D2BEC92D400A13991 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B7C2BEC92D400A13991 /* Network.swift */; };
 		AC5A7B802BEC9BCB00A13991 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B7F2BEC9BCB00A13991 /* WebSocketManager.swift */; };
 		AC5A7B822BECA2B800A13991 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7B812BECA2B800A13991 /* ChartView.swift */; };
+		AC5A7BAC2BEDB40F00A13991 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7BAB2BEDB40F00A13991 /* ChartViewModel.swift */; };
+		AC5A7BAE2BEDB72D00A13991 /* OrderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7BAD2BEDB72D00A13991 /* OrderBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		AC5A7B7C2BEC92D400A13991 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		AC5A7B7F2BEC9BCB00A13991 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 		AC5A7B812BECA2B800A13991 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		AC5A7BAB2BEDB40F00A13991 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		AC5A7BAD2BEDB72D00A13991 /* OrderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,8 @@
 			children = (
 				AC5A7B7F2BEC9BCB00A13991 /* WebSocketManager.swift */,
 				AC5A7B812BECA2B800A13991 /* ChartView.swift */,
+				AC5A7BAB2BEDB40F00A13991 /* ChartViewModel.swift */,
+				AC5A7BAD2BEDB72D00A13991 /* OrderBook.swift */,
 			);
 			path = Socket;
 			sourceTree = "<group>";
@@ -325,6 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5A7BAC2BEDB40F00A13991 /* ChartViewModel.swift in Sources */,
+				AC5A7BAE2BEDB72D00A13991 /* OrderBook.swift in Sources */,
 				AC5A7B6E2BEC6BA100A13991 /* CoinUpgradeView.swift in Sources */,
 				AC5A7B772BEC8A9A00A13991 /* CoinCombineView.swift in Sources */,
 				AC5A7B7D2BEC92D400A13991 /* Network.swift in Sources */,
