@@ -11,7 +11,7 @@ import SwiftUI
 struct Upbit_CombineConcurrencyApp: App {
     var body: some Scene {
         WindowGroup {
-            ChartView()
+            CoinCombineView()
         }
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct CoinCombineView: View {
     
@@ -21,6 +22,22 @@ struct CoinCombineView: View {
                 LazyVGrid(columns: columns) {
                     ForEach(viewModel.output.market, id: \.market) { item in
                         RowView(data: item)
+                            .onTapGesture {
+                                
+                                print("이 전")
+                                print(UserDefaults.groupShared.string(forKey: "KoreanName") ?? "데이터 없음")
+                                print(UserDefaults.standard.string(forKey: "KoreanName") ?? "데이터 없음")
+                                
+                                UserDefaults.groupShared.set(item.koreanName, forKey: "KoreanName")
+                                UserDefaults.groupShared.set(item.market, forKey: "Market")
+                                
+                                print("이 후")
+                                print(UserDefaults.groupShared.string(forKey: "KoreanName") ?? "데이터 없음")
+                                print("===========================")
+                                
+                                
+                                WidgetCenter.shared.reloadTimelines(ofKind: "StaticWidget")
+                            }
                     }
                 }
             } // ScrollView
