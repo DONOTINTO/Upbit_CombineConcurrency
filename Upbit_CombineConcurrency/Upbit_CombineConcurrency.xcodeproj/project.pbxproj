@@ -43,6 +43,13 @@
 		AC5A7C872BF1A3ED00A13991 /* IntentWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AC5A7C782BF1A3EC00A13991 /* IntentWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AC5A7C8E2BF1B2F900A13991 /* UserDefaultsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7C8D2BF1B2F900A13991 /* UserDefaultsGroup.swift */; };
 		AC5A7C8F2BF1B5CD00A13991 /* UserDefaultsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7C8D2BF1B2F900A13991 /* UserDefaultsGroup.swift */; };
+		ACA39E312BF6DE96006BC6E4 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA39E302BF6DE96006BC6E4 /* ChatView.swift */; };
+		ACA39E332BF6E00A006BC6E4 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA39E322BF6E00A006BC6E4 /* DummyData.swift */; };
+		ACA39E352BF6E431006BC6E4 /* DummyChattingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA39E342BF6E431006BC6E4 /* DummyChattingView.swift */; };
+		ACA39E382BF6F14B006BC6E4 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = ACA39E372BF6F14B006BC6E4 /* SocketIO */; };
+		ACA39E3A2BF6F191006BC6E4 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA39E392BF6F191006BC6E4 /* SocketIOManager.swift */; };
+		ACA39E3C2BF6F477006BC6E4 /* RealChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA39E3B2BF6F477006BC6E4 /* RealChatView.swift */; };
+		ACA39E3F2BF7005E006BC6E4 /* RealChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA39E3E2BF7005E006BC6E4 /* RealChatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +139,13 @@
 		AC5A7C8B2BF1B1E700A13991 /* Upbit_CombineConcurrency.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Upbit_CombineConcurrency.entitlements; sourceTree = "<group>"; };
 		AC5A7C8C2BF1B2A000A13991 /* StaticWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StaticWidgetExtension.entitlements; sourceTree = "<group>"; };
 		AC5A7C8D2BF1B2F900A13991 /* UserDefaultsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsGroup.swift; sourceTree = "<group>"; };
+		ACA39E302BF6DE96006BC6E4 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		ACA39E322BF6E00A006BC6E4 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		ACA39E342BF6E431006BC6E4 /* DummyChattingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyChattingView.swift; sourceTree = "<group>"; };
+		ACA39E392BF6F191006BC6E4 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		ACA39E3B2BF6F477006BC6E4 /* RealChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealChatView.swift; sourceTree = "<group>"; };
+		ACA39E3D2BF6F5C3006BC6E4 /* Upbit-CombineConcurrency-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Upbit-CombineConcurrency-Info.plist"; sourceTree = SOURCE_ROOT; };
+		ACA39E3E2BF7005E006BC6E4 /* RealChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealChatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA39E382BF6F14B006BC6E4 /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +221,8 @@
 		AC5A7B3A2BEC58AB00A13991 /* Upbit_CombineConcurrency */ = {
 			isa = PBXGroup;
 			children = (
+				ACA39E3D2BF6F5C3006BC6E4 /* Upbit-CombineConcurrency-Info.plist */,
+				ACA39E2F2BF6DE77006BC6E4 /* Chat */,
 				AC5A7C8B2BF1B1E700A13991 /* Upbit_CombineConcurrency.entitlements */,
 				AC5A7B7E2BEC9BAD00A13991 /* Socket */,
 				AC5A7B752BEC708700A13991 /* CoinCombine */,
@@ -319,6 +336,19 @@
 			path = IntentWidget;
 			sourceTree = "<group>";
 		};
+		ACA39E2F2BF6DE77006BC6E4 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				ACA39E302BF6DE96006BC6E4 /* ChatView.swift */,
+				ACA39E342BF6E431006BC6E4 /* DummyChattingView.swift */,
+				ACA39E322BF6E00A006BC6E4 /* DummyData.swift */,
+				ACA39E392BF6F191006BC6E4 /* SocketIOManager.swift */,
+				ACA39E3B2BF6F477006BC6E4 /* RealChatView.swift */,
+				ACA39E3E2BF7005E006BC6E4 /* RealChatViewModel.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +368,9 @@
 				AC5A7C862BF1A3ED00A13991 /* PBXTargetDependency */,
 			);
 			name = Upbit_CombineConcurrency;
+			packageProductDependencies = (
+				ACA39E372BF6F14B006BC6E4 /* SocketIO */,
+			);
 			productName = Upbit_CombineConcurrency;
 			productReference = AC5A7B382BEC58AB00A13991 /* Upbit_CombineConcurrency.app */;
 			productType = "com.apple.product-type.application";
@@ -450,6 +483,9 @@
 				Base,
 			);
 			mainGroup = AC5A7B2F2BEC58AB00A13991;
+			packageReferences = (
+				ACA39E362BF6F14B006BC6E4 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+			);
 			productRefGroup = AC5A7B392BEC58AB00A13991 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -514,18 +550,24 @@
 				AC5A7BAE2BEDB72D00A13991 /* OrderBook.swift in Sources */,
 				AC5A7B6E2BEC6BA100A13991 /* CoinUpgradeView.swift in Sources */,
 				AC5A7B772BEC8A9A00A13991 /* CoinCombineView.swift in Sources */,
+				ACA39E3F2BF7005E006BC6E4 /* RealChatViewModel.swift in Sources */,
+				ACA39E312BF6DE96006BC6E4 /* ChatView.swift in Sources */,
 				AC5A7B7D2BEC92D400A13991 /* Network.swift in Sources */,
 				AC5A7B822BECA2B800A13991 /* ChartView.swift in Sources */,
 				AC5A7B3E2BEC58AB00A13991 /* ContentView.swift in Sources */,
 				AC5A7B702BEC6BBB00A13991 /* CoinViewModel.swift in Sources */,
+				ACA39E332BF6E00A006BC6E4 /* DummyData.swift in Sources */,
+				ACA39E3A2BF6F191006BC6E4 /* SocketIOManager.swift in Sources */,
 				AC5A7B692BEC5ABB00A13991 /* CoinView.swift in Sources */,
 				AC5A7B672BEC5A9B00A13991 /* RowView.swift in Sources */,
 				AC5A7B3C2BEC58AB00A13991 /* Upbit_CombineConcurrencyApp.swift in Sources */,
 				AC5A7B7B2BEC912000A13991 /* CoinCombineViewModel_v2.swift in Sources */,
 				AC5A7B802BEC9BCB00A13991 /* WebSocketManager.swift in Sources */,
+				ACA39E352BF6E431006BC6E4 /* DummyChattingView.swift in Sources */,
 				AC5A7B6B2BEC5F7900A13991 /* Market.swift in Sources */,
 				AC5A7B792BEC907400A13991 /* ViewModelType.swift in Sources */,
 				AC5A7C8E2BF1B2F900A13991 /* UserDefaultsGroup.swift in Sources */,
+				ACA39E3C2BF6F477006BC6E4 /* RealChatView.swift in Sources */,
 				AC5A7B742BEC707B00A13991 /* CoinCombineViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -725,6 +767,7 @@
 				DEVELOPMENT_TEAM = 92Y6UC7Q5M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Upbit-CombineConcurrency-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -756,6 +799,7 @@
 				DEVELOPMENT_TEAM = 92Y6UC7Q5M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Upbit-CombineConcurrency-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1018,6 +1062,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACA39E362BF6F14B006BC6E4 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 16.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACA39E372BF6F14B006BC6E4 /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACA39E362BF6F14B006BC6E4 /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC5A7B302BEC58AB00A13991 /* Project object */;
 }
